@@ -1,4 +1,4 @@
-package com.springtut.module1.lesson1;
+package com.springtut.module1.lesson1.entities;
 
 
 public interface Team {

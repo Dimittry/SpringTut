@@ -1,4 +1,4 @@
-package com.springtut.module1.lesson1;
+package com.springtut.module1.lesson2.entities;
 
 public class BaseballGame implements Game {
     private Team homeTeam;
@@ -10,7 +10,7 @@ public class BaseballGame implements Game {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
     }
-
+    @Override
     public Team getHomeTeam() {
         return homeTeam;
     }
@@ -18,7 +18,7 @@ public class BaseballGame implements Game {
     public void setHomeTeam(Team homeTeam) {
         this.homeTeam = homeTeam;
     }
-
+    @Override
     public Team getAwayTeam() {
         return awayTeam;
     }
