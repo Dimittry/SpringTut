@@ -1,8 +1,11 @@
 package com.springtut.module1.lesson2.entities;
 
+import javax.sql.DataSource;
+
 public class BaseballGame implements Game {
     private Team homeTeam;
     private Team awayTeam;
+    private DataSource dataSource;
 
     public BaseballGame() {}
 
@@ -10,6 +13,11 @@ public class BaseballGame implements Game {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
     }
+
+    public void setDataSource(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
+
     @Override
     public Team getHomeTeam() {
         return homeTeam;
