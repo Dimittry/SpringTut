@@ -9,7 +9,7 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:component-scan base-package="com.springtut.module1.lesson3"/>
-
+    <bean id="nf" class="java.text.NumberFormat" factory-method="getCurrencyInstance"/>
     <bean id="redSox" class="com.springtut.module1.lesson3.entities.RedSox"/>
     <bean id="cubs" class="com.springtut.module1.lesson3.entities.Cubs"/>
     <bean id="game" class="com.springtut.module1.lesson3.entities.BaseballGame">
