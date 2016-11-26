@@ -27,5 +27,6 @@ public class RunDemo {
 //        for(String name : context.getBeanDefinitionNames()) {
 //            System.out.println(name);
 //        }
+        context.close();
     }
 }
