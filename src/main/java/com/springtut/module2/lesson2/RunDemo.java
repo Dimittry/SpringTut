@@ -13,19 +13,19 @@ public class RunDemo {
         Team cubs = context.getBean("cubs", Team.class);
 
         Game game = context.getBean("game", Game.class);
-        //System.out.println(game.playGame());
-        System.out.println(game);
+        game.playGame();
+        //System.out.println(game);
 
-        Game game2 = context.getBean("game", Game.class);
-        game2.setAwayTeam(royals);
-        System.out.println(game2);
-        game.setAwayTeam(cubs);
-        System.out.println(game);
-        System.out.println(game.playGame());
-
-        System.out.println("There are " + context.getBeanDefinitionCount() + " beans");
-        for(String name : context.getBeanDefinitionNames()) {
-            System.out.println(name);
-        }
+//        Game game2 = context.getBean("game", Game.class);
+//        game2.setAwayTeam(royals);
+//        System.out.println(game2);
+//        game.setAwayTeam(cubs);
+//        System.out.println(game);
+//        System.out.println(game.playGame());
+//
+//        System.out.println("There are " + context.getBeanDefinitionCount() + " beans");
+//        for(String name : context.getBeanDefinitionNames()) {
+//            System.out.println(name);
+//        }
     }
 }
