@@ -5,6 +5,7 @@ import com.springtut.module3.repositories.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
@@ -15,7 +16,7 @@ public class AccountService {
     @Autowired
     private AccountRepository repository;
 
-//    @Transactional(readOnly = true, propagation)
+    @Transactional(readOnly = true, propagation = Propagation.SUPPORTS)
     public BigDecimal getBalance(Long id) {
         return repository.getAccount(id).getBalance();
     }
